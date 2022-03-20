@@ -1,5 +1,5 @@
 # GrayMatter-Robotics-Registration-Challenge
-The data set I used ASL Datasets collected by the ETH Autonomous System Lab [Link](https://projects.asl.ethz.ch/datasets/doku.php?id=home)
+The data set I used is ASL Datasets collected by the ETH Autonomous System Lab [Link](https://projects.asl.ethz.ch/datasets/doku.php?id=home)
 
 # Results
 **Apartment**
