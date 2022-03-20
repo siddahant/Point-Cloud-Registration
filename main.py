@@ -59,7 +59,7 @@ def main(ref_data,input_data,config_file):
 	data_out.save(f"{output_base_directory + test_base}_{output_base_file}_data_out.vtk")
 
 if __name__ == "__main__":
-   config_file = "../data/point2plane.yaml"
+   config_file = "../data/point2point.yaml"
    ref_data = "../data/Apartment/Hokuyo_0.csv"
    input_data = "../data/Apartment/Hokuyo_1.csv"
 
