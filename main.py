@@ -57,11 +57,12 @@ def main(ref_data,input_data,config_file):
 	ref.save(f"{output_base_directory + test_base}_{output_base_file}_ref.vtk")
 	data.save(f"{output_base_directory + test_base}_{output_base_file}_data_in.vtk")
 	data_out.save(f"{output_base_directory + test_base}_{output_base_file}_data_out.vtk")
+	return T
 
 if __name__ == "__main__":
    config_file = "../data/point2point.yaml"
    ref_data = "../data/Apartment/Hokuyo_0.csv"
    input_data = "../data/Apartment/Hokuyo_1.csv"
 
-   main(ref_data,input_data,config_file)
+   T = main(ref_data,input_data,config_file)
 
