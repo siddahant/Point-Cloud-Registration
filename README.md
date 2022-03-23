@@ -1,4 +1,6 @@
 # GrayMatter-Robotics-Registration-Challenge
+
+# Results
 The result on data set provided by GrayMatter-Robotics for Registration-Challenge
 
 The value close to zero in Mean Square Error represents how closest the result is. eg. MSE = 0 means exact matched computed matrix with ground truth.
@@ -12,7 +14,7 @@ The value close to zero in Mean Square Error represents how closest the result i
 
 The data set I used is ASL Datasets collected by the ETH Autonomous System Lab [Link](https://projects.asl.ethz.ch/datasets/doku.php?id=home)
 
-# Results
+# Pervious Results
 **Apartment**
 
 Befor tarsformation
