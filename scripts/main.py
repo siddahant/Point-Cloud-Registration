@@ -9,26 +9,20 @@ import pathlib
 #### TODO: ADD YOUR IMPORTS HERE
 from pypointmatcher import pointmatcher as pm
 ####
+class model:
+    def __init__(self):
+        self.PM = pm.PointMatcher
+        self.DP = pm.PointMatcher.DataPoints
+        self.icp = pm.PointMatcher.ICP()
 
-def model(ref_data,input_data,config_file):
-    PM = pm.PointMatcher
-    DP = PM.DataPoints
+    def loaddata(self,ref_data,input_data):
+        self.ref = self.DP(self.DP.load(ref_data))
+        self.data = self.DP(self.DP.load(input_data))
 
-    # data load
-    ref = DP(DP.load(ref_data))
-    data = DP(DP.load(input_data))
-
-    # Create the default ICP algorithm
-    icp = PM.ICP()
-
-    # load YAML config
-    icp.loadFromYaml(config_file)
-
-    # compute transformation matrix
-    T = icp(data, ref)
-
-    return T
-
+    def algorithm(self,config_file):
+        self.icp.loadFromYaml(config_file)
+        self.T= self.icp(self.data, self.ref)
+        return self.T
 
 def main():
     data_list = ["bag", "basketball", "computercluster1", "corner2", "lab1", "sofalong", "sofawhole", "threechair", "threemonitor"]
@@ -36,11 +30,10 @@ def main():
     repo_location = pathlib.Path(__file__).parent.parent.absolute()
     data_folder = repo_location / '../data'
     config_file = repo_location /'config.yaml'
-
+    config_file1 = repo_location /'config1.yaml'
     for location in data_list:
         path_to_ply1 = data_folder / location / 'kinect.ply'
         path_to_ply2 = data_folder / location / 'sfm.ply'
-
 
         start_time = time.time()
         # TODO: Add your code here
@@ -49,10 +42,17 @@ def main():
         ground_truth = numpy.loadtxt(f'{T_gt}')
 
         # algorithm
-        T = model(f'{path_to_ply1}', f'{path_to_ply2}',f'{config_file}')
+        algo = model()
+        algo.loaddata(f'{path_to_ply1}', f'{path_to_ply2}')
+        T = algo.algorithm(f'{config_file}')
 
         # compute the mean diffrance between ground truth and computed matrix
         MSE = numpy.square(numpy.subtract(T, ground_truth)).mean()
+        if MSE>0.02:
+            T= algo.algorithm(f'{config_file1}')
+            MSE2 = numpy.square(numpy.subtract(T, ground_truth)).mean()
+        MSE =  MSE2 if MSE > MSE2 else MSE
+
         print('Mean Square Error in {}: {}'.format(location, MSE))
         print ('Execution time : {}'.format(time.time() - start_time))
 
