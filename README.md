@@ -1,7 +1,20 @@
 # GrayMatter-Robotics-Registration-Challenge
-The data set I used is ASL Datasets collected by the ETH Autonomous System Lab [Link](https://projects.asl.ethz.ch/datasets/doku.php?id=home)
 
 # Results
+The result on data set provided by GrayMatter-Robotics for Registration-Challenge
+
+The value close to zero in Mean Square Error represents how closest the result is. eg. MSE = 0 means exact matched computed matrix with ground truth.
+
+
+
+
+![Results](https://user-images.githubusercontent.com/44742647/159645056-cd30626f-f313-4467-a10a-6ef557b26f72.png)
+
+
+
+The data set I used is ASL Datasets collected by the ETH Autonomous System Lab [Link](https://projects.asl.ethz.ch/datasets/doku.php?id=home)
+
+# Pervious Results
 **Apartment**
 
 Befor tarsformation
@@ -38,7 +51,6 @@ Befor tarsformation
 
 After using ICP 
 ![Screenshot from 2022-03-20 03-29-02](https://user-images.githubusercontent.com/44742647/159158838-ba30598a-7d60-4774-ae4e-408c42dbd3e0.png)
-
 
 
 
