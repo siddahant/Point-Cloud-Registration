@@ -8,7 +8,7 @@ The value close to zero in Mean Square Error represents how closest the result i
 
 
 
-![Results](https://user-images.githubusercontent.com/44742647/159645056-cd30626f-f313-4467-a10a-6ef557b26f72.png)
+![Results](https://user-images.githubusercontent.com/44742647/159757381-52a77460-6bc0-4aa3-b8db-530b846afb17.png)
 
 
 
