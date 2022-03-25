@@ -51,7 +51,7 @@ def main():
         if MSE>0.02:
             T= algo.algorithm(f'{config_file1}')
             MSE2 = numpy.square(numpy.subtract(T, ground_truth)).mean()
-        MSE =  MSE2 if MSE > MSE2 else MSE
+            MSE =  MSE2 if MSE > MSE2 else MSE
 
         print('Mean Square Error in {}: {}'.format(location, MSE))
         print ('Execution time : {}'.format(time.time() - start_time))
