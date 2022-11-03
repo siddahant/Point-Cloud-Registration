@@ -1,8 +1,6 @@
-# GrayMatter-Robotics-Registration-Challenge
+
 
 # Results
-The result on data set provided by GrayMatter-Robotics for Registration-Challenge
-
 The value close to zero in Mean Square Error represents how closest the result is. eg. MSE = 0 means exact matched computed matrix with ground truth.
 
 
