@@ -15,7 +15,8 @@ The data set I used is ASL Datasets collected by the ETH Autonomous System Lab [
 # Pervious Results
 **Apartment**
 
-Befor tarsformation
+Before transformation
+
 
 ![Screenshot from 2022-03-20 03-25-19](https://user-images.githubusercontent.com/44742647/159159035-73733474-dc2b-4648-a424-7912a3df9e3e.png)
 
@@ -25,7 +26,7 @@ After using ICP
 
 **ETH Hauptgebaude**
 
-Befor tarsformation
+Before transformation
 
 ![Screenshot from 2022-03-20 03-26-39](https://user-images.githubusercontent.com/44742647/159158831-bf803cfd-25e3-45c3-a8ce-07f4c9b11f56.png)
 
@@ -35,7 +36,7 @@ After using ICP
 
 **Mountain Plain**
 
-Befor tarsformation
+Before transformation
 
 ![Screenshot from 2022-03-20 03-28-03](https://user-images.githubusercontent.com/44742647/159158833-68156945-fd3f-44bf-81ce-138622f54cc9.png)
 
@@ -44,7 +45,7 @@ After using ICP
 ![Screenshot from 2022-03-20 03-28-11](https://user-images.githubusercontent.com/44742647/159158835-3bae0606-697e-49b4-b8da-c8cc7eee2791.png)
 
 **Stairs**
-Befor tarsformation
+Before transformation
 ![Screenshot from 2022-03-20 03-28-55](https://user-images.githubusercontent.com/44742647/159158836-2093aeab-b564-4303-9500-9f4ab912fab0.png)
 
 After using ICP 
